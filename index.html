@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NikaHood</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><span>N</span>ika<span>H</span>ood</h1>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <h1>Fanletter, Please</h1>
+
+            <div class="drama-info" id="dramaInfo">
+                <h2>Drama Information</h2>
+                <p><strong>Cast:</strong> Choi Soo Young, Yoon Park, Shin Yeon Woo</p>
+                <p><strong>Genre:</strong> Comedy, Romance</p>
+                <p><strong>Plot:</strong> Popular actress Han Gang-Hee faces the biggest crisis in her career due to a fan letter. Meanwhile, Bang Jung-Seok is a single father, who has raised his daughter alone. His daughter suffers from leukemia and has a wish. Bang Jung-Seok badly wants to grant his daughter's wish.</p>
+            </div>
+
+            <div class="backdrop" id="backdrop"></div>
+
+            <div class="content-wrapper">
+                <div class="episode-selector">
+                    <label for="episodeSelect">Select Episode:</label>
+                    <select id="episodeSelect">
+                        <option value="episode1" data-video="https://video.xx.fbcdn.net/v/t42.1790-2/10000000_576217797980903_5683386345227021977_n.mp4?_nc_cat=100&ccb=1-7&_nc_sid=55d0d3&efg=eyJybHIiOjM4MSwicmxhIjo0MDk2LCJ2ZW5jb2RlX3RhZyI6InN2ZV9zZCJ9&_nc_ohc=7uRGFj0MD5kAX9kimbG&rl=381&vabr=212&_nc_ht=scontent.xx&edm=APRAPSkEAAAA&oh=00_AfChW9D1xYGPV1ZGWgC7LwK4LDVdUURx0P5rOMroN-Wk5g&oe=65AE45F6">Episode 1</option>
+                        <option value="episode2" data-video="https://video.xx.fbcdn.net/v/t42.1790-2/10000000_1042032833787189_3111512814375829230_n.mp4?_nc_cat=107&ccb=1-7&_nc_sid=55d0d3&efg=eyJybHIiOjM3OSwicmxhIjo0MDk2LCJ2ZW5jb2RlX3RhZyI6InN2ZV9zZCJ9&_nc_ohc=TY0B0sFH4PAAX8L2fOV&rl=379&vabr=211&_nc_ht=scontent.xx&edm=APRAPSkEAAAA&oh=00_AfD3Qf4586bd81fvnbISvyI3eP-upXFtsypmQgAxg0mV1g&oe=65AE0897">Episode 2</option>
+                        <option value="episode3" data-video="https://video.xx.fbcdn.net/v/t42.1790-2/10000000_667063365111504_7717320246791801964_n.mp4?_nc_cat=109&ccb=1-7&_nc_sid=55d0d3&efg=eyJybHIiOjMwMCwicmxhIjo0MDk2LCJ2ZW5jb2RlX3RhZyI6InN2ZV9zZCJ9&_nc_ohc=2Fi6Dwu-fAkAX_fPA5F&rl=300&vabr=135&_nc_ht=scontent.xx&edm=APRAPSkEAAAA&oh=00_AfCHw26NFKRujSroxBYijCmfAEIADaDH8dbSg_b7yosz6w&oe=65AE4D83">Episode 3</option>
+                        <option value="episode4" data-video="https://video.xx.fbcdn.net/v/t42.1790-2/10000000_445462431101632_2932632705860256617_n.mp4?_nc_cat=111&ccb=1-7&_nc_sid=55d0d3&efg=eyJybHIiOjMwMCwicmxhIjo0MDk2LCJ2ZW5jb2RlX3RhZyI6InN2ZV9zZCJ9&_nc_ohc=ybFvCHIpwpUAX9YP_Do&rl=300&vabr=139&_nc_ht=scontent.xx&edm=APRAPSkEAAAA&oh=00_AfDPwM-A9vO5yKJOSImgyV_XBkA8IsA_JDwqIchN55dWiA&oe=65ADAA1E">Episode 4</option>
+                    </select>                    
+                </div>
+
+                <div class="video-container">
+                    <video width="100%" height="100%" controls id="videoPlayer">
+                        <source src="" type="video/mp4">
+                    </video>
+                    <a id="downloadButton" class="download-button" href="" download target="_blank">Download</a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>&copy; Copyright 2024 <span>N</span>ika<span>H</span>ood</footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

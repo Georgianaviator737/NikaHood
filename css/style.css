@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    height: 100vh;
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+}
+
+main .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main {
+    background-color: #1a1a1a;
+    margin-top: 20px;
+}
+
+h1 {
+    color: #fff;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    display: inline-block;
+    border: 1px solid rgb(255, 217, 0);
+    border-radius: 25px;
+    padding: 10px;
+}
+
+span {
+    color: rgb(255, 217, 0);
+}
+
+main h1 {
+    text-align: center;
+    transition: .5s all;
+    margin: 0 auto;
+}
+
+main h1:hover {
+    color: rgb(255, 217, 0);
+    cursor: pointer;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 20px;
+}
+
+.episode-selector, .video-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.download-button {
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 217, 0);
+    background-color: rgb(255, 217, 0);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 10px;
+    position: absolute;
+    bottom: -60px;
+    right: 0px;
+    transition: .5s all;
+}
+
+.download-button:hover {
+    color: rgb(255, 217, 0);
+    background-color: transparent;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #333;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.drama-info {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    max-width: 90%;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: #333;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease-in-out;
+    text-align: left;
+}
+
+.drama-info h2 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.drama-info p {
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.drama-info.show-info {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+    pointer-events: none; 
+    transition: opacity 0.5s ease-in-out; 
+}
+
+.drama-info.show-info + .backdrop {
+    display: block;
+    pointer-events: auto; 
+}
