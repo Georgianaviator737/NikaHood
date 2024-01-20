@@ -175,51 +175,20 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-    header h1 {
-        font-size: 2rem;
+    body {
+        display: flex;
+        flex-direction: column;
     }
 
-    main h1 {
-        font-size: 2rem;
+    main {
+        align-items: center;
     }
 
     .content-wrapper {
-        padding: 0 10px 20px;
+        padding: 20px;
     }
 
-    .download-button {
-        position: static;
-        margin-bottom: 20px;
-    }
-
-    .video-container {
-        margin-bottom: 20px;
-    }
-
-    .backdrop {
-        display: block;
-        pointer-events: auto;
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-
-    .drama-info {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 90%;
-        max-width: none;
-        opacity: 1;
-        pointer-events: auto;
-    }
-
-    .drama-info h2 {
-        font-size: 1.5rem;
-        margin-bottom: 8px;
-    }
-
-    .drama-info p {
-        font-size: 1rem;
-        margin-bottom: 6px;
+    footer {
+        margin-top: auto;
     }
 }
